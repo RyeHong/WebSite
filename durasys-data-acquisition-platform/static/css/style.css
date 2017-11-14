@@ -1,0 +1,37 @@
+#layout_header {
+height: 80px;
+background-color: #f0f0f0;
+}
+
+#layout_control {
+background-color: #e0e0e0;
+}
+
+#component_logo {
+padding: 20px;
+}
+
+#layout_main {
+}
+
+#layout_main_left {
+background-color: #f0f0f0;
+min-height: 500px;
+}
+
+#layout_main_center {
+min-height: 500px;
+}
+
+#layout_main_right {
+background-color: #f0f0f0;
+min-height: 500px;
+}
+
+#layout_footer {
+position: fixed;
+right: 0px;
+bottom: 0px;
+left: 0px;
+background-color: #e0e0e0;
+}

@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DDA Platform</title>
+    <link rel="stylesheet" href="{% static "lib/bootstrap-4.0.0-beta.2-dist/css/bootstrap.min.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/style.css" %}"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" id="layout_header">
+            <div class="col">
+                 <h3 id="component_logo">PDONE - DuraSys Data Acquisition
+    Platform</h3>
+            </div>
+        </div>
+        <div class="row" id="layout_control">
+            <div class="col">
+                <div class="nav justify-content-center">
+                    <button class="btn btn-dark m-2">Run</button>
+                    <button class="btn btn-dark m-2">Stop</button>
+                    <button class="btn btn-dark m-2">Pause</button>
+                    <button class="btn btn-dark m-2">Exit</button>
+                 </div>
+             </div>
+        </div>
+        <div class="row" id="layout_main">
+            <div class="col-2" id="layout_main_left">
+            </div>
+            <div class="col-8" id="layout_main_center">
+                <div class="row">
+                    <div class="col">
+                        <canvas id="chart_left" width="400" height="400"></canvas>
+                    </div>
+                    <div class="col">
+                        <canvas id="chart_right" width="400" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2" id="layout_main_right">
+            </div>
+        </div>
+        <div class="row" id="layout_footer">
+            <div class="col">
+                <label class="float-right mr-2">&copy; 2017 PDONE</label>
+             </div>
+        </div>
+    </div>
+
+    <script src="{% static "lib/jQuery/jquery-3.2.1.js" %}"></script>
+    <script src="{% static "lib/bootstrap-4.0.0-beta.2-dist/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "lib/Chart.js/Chart.min.js" %}"></script>
+    <script src="{% static "js/main.js" %}"></script>
+</body>
+</html>
